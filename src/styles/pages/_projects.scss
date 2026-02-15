@@ -1,238 +1,258 @@
 .PROJECTS {
-	background: linear-gradient($light-teal, $teal);
-	text-align: center;
-	overflow-x: hidden;
+  background: linear-gradient($light-teal, $teal);
+  text-align: center;
+  overflow-x: hidden;
 
-	* {
-		margin: 0;
-		padding: 0;
-		box-sizing: border-box;
-	}
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 
-	body {
-		background-color: $light-teal;
-		font-family: $body-font, system-ui;
-	}
+  body {
+    background-color: $light-teal;
+    font-family: $body-font, system-ui;
+  }
 
-	.flex {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	}
-	.flex-rev {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		flex-direction: row-reverse;
-	}
+  .flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .flex-rev {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+  }
 
-	.flex-col {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		flex-direction: column;
-	}
+  .flex-col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
 
-	.line {
-		flex-direction: column;
-		position: relative;
-	}
+  .line {
+    flex-direction: column;
+    position: relative;
+  }
 
-	.main {
-		padding-bottom: 4rem;
-		margin-top: 3rem;
-		text-align: left;
-		font-family: $body-font, sans-serif;
+  .main {
+    padding-bottom: 4rem;
+    margin-top: 3rem;
+    text-align: left;
+    font-family: $body-font, sans-serif;
 
-		.anchor {
-			position: absolute;
+    .anchor {
+      position: absolute;
 
-			top: 1%;
-			width: 2rem;
-		}
+      top: 1%;
+      width: 2rem;
+    }
 
-		#verti {
-			height: 375rem;
-			width: 0.75rem;
-			margin-top: -0.5rem;
+    #verti {
+      height: 515rem;
+      width: 0.75rem;
+      margin-top: -0.5rem;
 
-			position: relative;
-			z-index: 1;
-		}
+      position: relative;
+      z-index: 1;
+    }
 
-		.dots {
-			position: absolute;
-			width: 2rem;
-			z-index: 2;
-		}
+    .dots {
+      position: absolute;
+      width: 2rem;
+      z-index: 2;
+    }
 
-		.text {
-			background-color: $white;
-			color: $teal;
-			width: 28rem;
-			border-radius: 0.5rem;
-			font-size: 1.25rem;
-			font-weight: 600;
-			padding: 1.5rem;
-			display: flex;
-			flex-direction: column;
+    .text {
+      background-color: $white;
+      color: $teal;
+      width: 28rem;
+      border-radius: 0.5rem;
+      font-size: 1.25rem;
+      font-weight: 600;
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
 
-			img {
-				object-fit: contain;
-				margin: -1.25rem 0 0.5rem -1.25rem;
-				align-self: flex-start;
-				max-height: 7.5rem;
-			}
-		}
+      img {
+        object-fit: contain;
+        margin: -1.25rem 0 0.5rem -1.25rem;
+        align-self: flex-start;
+        max-height: 7.5rem;
+      }
+    }
 
-		p {
-			padding: 0;
-			&:last-child {
-				margin-bottom: 0;
-			}
-		}
-		ul {
-			padding: 0;
-			margin-top: 1rem;
-			margin-left: 1.5rem;
-			list-style: disc;
-		}
-		li {
-			margin-top: 0.5rem;
-		}
-	}
+    p {
+      padding: 0;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    ul {
+      padding: 0;
+      margin-top: 1rem;
+      margin-left: 1.5rem;
+      list-style: disc;
+    }
+    li {
+      margin-top: 0.5rem;
+    }
+  }
 
-	.group {
-		display: flex;
-		width: fit-content;
-		z-index: 3;
-	}
+  .group {
+    display: flex;
+    width: fit-content;
+    z-index: 3;
+  }
 
-	.gp-left {
-		position: absolute;
-		left: 20%;
-		justify-content: flex-start;
-	}
+  .gp-left {
+    position: absolute;
+    left: 20%;
+    justify-content: flex-start;
+  }
 
-	.gp-right {
-		position: absolute;
-		right: 20%;
-		justify-content: flex-end;
-	}
+  .gp-right {
+    position: absolute;
+    right: 20%;
+    justify-content: flex-end;
+  }
 
-	$group-count: 11;
-	$gap-percent: 8.75%;
-	$base-top: 1%;
+  $group-count: 15;
+  $gap-percent: 6.5%;
+  $base-top: 1%;
 
-	@for $i from 1 through $group-count {
-		.gp#{$i} {
-			@media screen and (min-width: 769px) {
-				top: calc(#{$base-top} + #{$gap-percent} * (#{$i - 1}));
-			}
-		}
+  @for $i from 1 through $group-count {
+    .gp#{$i} {
+      @media screen and (min-width: 769px) {
+        top: calc(#{$base-top} + #{$gap-percent} * (#{$i - 1}));
+      }
+    }
 
-		#dt#{$i} {
-			@media screen and (min-width: 769px) {
-				top: calc(#{$base-top} + #{$gap-percent} * (#{$i - 1}));
-			}
-		}
-	}
+    #dt#{$i} {
+      @media screen and (min-width: 769px) {
+        top: calc(#{$base-top} + #{$gap-percent} * (#{$i - 1}));
+      }
+    }
+  }
 
-	.baseline {
-		padding-bottom: 1.5rem;
-		display: block;
-		margin: 2rem auto 0;
-		width: 80%;
-	}
+  .baseline {
+    padding-bottom: 1.5rem;
+    display: block;
+    margin: 2rem auto 0;
+    width: 80%;
+  }
 
-	@media screen and (max-width: 1600px) {
-		.gp-left {
-			left: 15%;
-		}
-		.gp-right {
-			right: 15%;
-		}
-	}
+  @media screen and (max-width: 1600px) {
+    .gp-left {
+      left: 15%;
+    }
+    .gp-right {
+      right: 15%;
+    }
+  }
 
-	@media screen and (max-width: 1400px) {
-		.gp-left {
-			left: 10%;
-		}
-		.gp-right {
-			right: 10%;
-		}
-	}
+  @media screen and (max-width: 1400px) {
+    .gp-left {
+      left: 10%;
+    }
+    .gp-right {
+      right: 10%;
+    }
+  }
 
-	@media screen and (max-width: 1100px) {
-		.main .text {
-			width: 24rem;
-		}
-		.gp-left {
-			left: 5%;
-		}
-		.gp-right {
-			right: 5%;
-		}
-	}
+  @media screen and (max-width: 1100px) {
+    .main .text {
+      width: 24rem;
+    }
+    .gp-left {
+      left: 5%;
+    }
+    .gp-right {
+      right: 5%;
+    }
+  }
 
-	@media screen and (max-width: 768px) {
-		.main {
-			margin-top: 1rem;
-			padding-bottom: 2rem;
+  @media screen and (max-width: 768px) {
+    .main {
+      margin-top: 1rem;
+      padding-bottom: 2rem;
 
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			gap: 2rem;
-		}
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+    }
 
-		#verti,
-		.anchor,
-		.dots {
-			display: none;
-		}
+    #verti,
+    .anchor,
+    .dots {
+      display: none;
+    }
 
-		.group {
-			position: relative !important;
-			width: 90%;
-			max-width: 500px;
-			margin-bottom: 0;
+    .group {
+      position: relative !important;
+      width: 90%;
+      max-width: 500px;
+      margin-bottom: 0;
 
-			left: unset !important;
-			right: unset !important;
-			top: unset !important;
-			display: flex;
-			justify-content: center;
-		}
+      left: unset !important;
+      right: unset !important;
+      top: unset !important;
+      display: flex;
+      justify-content: center;
+    }
 
-		.gp-left,
-		.gp-right {
-			position: relative;
-			left: unset;
-			right: unset;
-			top: unset;
-			justify-content: center;
-		}
+    .gp-left,
+    .gp-right {
+      position: relative;
+      left: unset;
+      right: unset;
+      top: unset;
+      justify-content: center;
+    }
 
-		.main .text {
-			width: 100%;
-			font-size: 1rem;
-			padding: 1rem;
+    .main .text {
+      width: 100%;
+      font-size: 1rem;
+      padding: 1rem;
 
-			img {
-				max-width: 100px;
-				max-height: 4rem;
-			}
-		}
+      img {
+        max-width: 100px;
+        max-height: 4rem;
+      }
+    }
 
-		ul {
-			margin-left: 1rem;
-		}
+    ul {
+      margin-left: 1rem;
+    }
 
-		.baseline {
-			margin-top: 2rem;
-			padding-bottom: 1.5rem;
-			width: 90%;
-		}
-	}
+    .baseline {
+      margin-top: 2rem;
+      padding-bottom: 1.5rem;
+      width: 90%;
+    }
+  }
+  // Specific styling for new companies
+  .company-peakgrowth-studio,
+  .company-protofine-ai,
+  .company-kpmg,
+  .company-student-alumni-relations-cell {
+    .text {
+      width: 35rem; // Wider card
+      min-height: 25rem; // Minimum height
+      padding: 5rem; // Much more padding
+      box-shadow: 0 0 3rem 0.5rem rgba(0, 0, 0, 0.3); // Deep uniform shadow
+
+      img {
+        padding: 1rem;
+        background-color: white;
+        box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.2); // Uniform shadow on image
+        border-radius: 0.5rem;
+        margin: -2rem 0 2rem -2rem; // Adjust placement
+      }
+    }
+  }
 }
