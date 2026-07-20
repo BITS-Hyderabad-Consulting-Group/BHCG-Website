@@ -81,6 +81,7 @@ const PartnerCard = ({
 						fontFamily: 'Poppins',
 						flexGrow: 1,
 						lineHeight: 1.8,
+						mb: 2,
 					}}
 				>
 					{description}

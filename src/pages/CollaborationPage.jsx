@@ -37,12 +37,18 @@ const CollaborationPage = () => {
 
 			<div className="COLLABORATION">
 				<Typography
-					variant="h2"
 					sx={{
 						color: '#027F7B',
 						fontFamily: 'Poppins',
 						fontWeight: 600,
 						textAlign: 'center',
+						fontSize: {
+							xs: '2.6rem',
+							sm: '3.5rem',
+							md: '4rem',
+						},
+						lineHeight: 1.2,
+						wordBreak: 'break-word',
 					}}
 				>
 					{collaboration.title}
@@ -53,7 +59,10 @@ const CollaborationPage = () => {
 						width: '120px',
 						height: '4px',
 						backgroundColor: '#027F7B',
-						margin: '1.5rem auto 0',
+						margin: {
+							xs: '1rem auto 0',
+							md: '1.5rem auto 0',
+						},
 						borderRadius: '2px',
 					}}
 				/>
