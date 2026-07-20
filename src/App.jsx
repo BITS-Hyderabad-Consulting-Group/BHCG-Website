@@ -6,6 +6,8 @@ import Projects from './pages/Projects';
 import Team from './pages/Team';
 import ErrorPage from './pages/ErrorPage';
 import Resources from './pages/Resources';
+import BrandColabs from './pages/BrandColabs';
+import CollaborationPage from './pages/CollaborationPage';
 import BlogPage from './pages/BlogPage';
 import Events from './pages/Events';
 import Alumni from './pages/Alumni';
@@ -22,6 +24,8 @@ export default function App() {
 				<Route path='/consulting' element={<Consulting />} />
 				<Route path='/blog/:blogid' element={<BlogPage />} />
 				<Route path='/resources' element={<Resources />} />
+				<Route path='/brand-colabs' element={<BrandColabs />} />
+				<Route path="/brand-colabs/:id" element={<CollaborationPage />}/>
 				<Route path='/events' element={<Events />} />
 				<Route path='/alumni' element={<Alumni />} />
 				<Route path='/projects' element={<Projects />} />

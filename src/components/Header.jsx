@@ -91,6 +91,9 @@ const Header = (props) => {
 									<Link to='/resources'>Resources</Link>
 								</li>
 								<li>
+									<Link to='/brand-colabs'>Brand Collaborations</Link>
+								</li>
+								<li>
 									<Link to='/events'>Events</Link>
 								</li>
 								<li>
@@ -170,6 +173,9 @@ const Header = (props) => {
 								</li>
 								<li>
 									<Link to='/resources'>Resources</Link>
+								</li>
+								<li>
+									<Link to='/brand-colabs'>Brand Collaborations</Link>
 								</li>
 								<li>
 									<Link to='/events'>Events</Link>

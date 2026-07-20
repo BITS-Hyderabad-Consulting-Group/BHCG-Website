@@ -1,0 +1,20 @@
+[
+  {
+    "id": "wallstreetmojo-excelmojo",
+    "title": "BHCG × WallStreetMojo & ExcelMojo",
+    "category": "Knowledge Partner",
+    "image": "/partners/mojocolab.webp",
+    "shortDescription": "BHCG collaborates with WallStreetMojo and ExcelMojo to provide students with industry-oriented learning resources.",
+    "description": "\nAt the BHCG Analytics Division, we help students build practical analytical skills and solve real-world problems through workshops, hackathons, case competitions, and industry-driven projects.\n\nTo further this mission, we have partnered with WallStreetMojo and ExcelMojo to offer students exclusive access to premium learning resources through special coupon codes. Their courses in Advanced Excel, financial modelling, Power BI, SQL, Business Analytics, and related domains complement the hands-on experiences provided by the Analytics Division, enabling students to strengthen both their technical and business skills.\n\nTogether, this collaboration creates a well-rounded learning ecosystem. While WallStreetMojo and ExcelMojo provide structured, self-paced courses designed by industry experts, BHCG offers opportunities to apply those skills through our collaborative projects, competitions, and practical initiatives. This combination helps bridge the gap between learning and real-world application.\n\nThe partnership also benefits our collaborators by connecting them with a motivated community of students aspiring to careers in analytics, consulting, finance, and technology while contributing to the development of future industry-ready professionals.\n\nWe encourage all students to explore the available courses and make the most of the exclusive coupon codes to enhance their analytical toolkit and accelerate their learning journey.",
+    "websites": [
+      {
+        "name": "WallStreetMojo",
+        "url": "https://www.wallstreetmojo.com/"
+      },
+      {
+        "name": "ExcelMojo",
+        "url": "https://www.excelmojo.com/"
+      }
+    ]
+  }
+]
