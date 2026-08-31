@@ -15,7 +15,7 @@ import locationIcon from '../assets/footer/location.webp';
 
 const Footer = ({ footerRef }) => {
 	const year = dayjs().year();
-	const phno = '+91 93463 15392';
+	const phno = '+91 97739 21117';
 
 	return (
 		<footer className='FOOTER' ref={footerRef}>
